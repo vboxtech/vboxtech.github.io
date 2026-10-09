@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dot Connect: Color Puzzle - Official App Page</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --accent-color: #ff3b30;
+            --bg-color: #0d1b2a;
+            --card-bg: #1b263b;
+            --text-color: #e0e1dd;
+            --heading-color: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header / Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(13, 27, 42, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #1b263b;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+            min-height: 70vh;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 20px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.8rem;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            color: #778da9;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+
+        .cta-btn:hover {
+            background-color: #1557b0;
+        }
+
+        .hero-img {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .hero-img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 8%;
+            background-color: #0e1726;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2rem;
+            color: var(--heading-color);
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: left;
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: var(--heading-color);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #778da9;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 8%;
+            background-color: #0b131e;
+            border-top: 1px solid #1b263b;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #778da9;
+        }
+
+        .footer-links {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <a href="#" class="logo">Dot <span>Connect</span></a>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="app-ads.txt">app-ads.txt</a>
+        </nav>
+    </header>
+
+    <!-- Main Hero Banner -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Connect Matching Colors</h1>
+            <p>A simple, relaxing, and addictive line-puzzle game. Link all matching color dots without overlapping paths to complete every board level!</p>
+            <a href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME" target="_blank" class="cta-btn">Get it on Google Play</a>
+        </div>
+        <div class="hero-img">
+            <!-- Replace banner image if desired -->
+            <img src="banner.png" alt="Dot Connect Game Banner" style="max-width: 450px; border-radius: 12px;">
+        </div>
+    </section>
+
+    <!-- App Features Grid -->
+    <section class="features" id="features">
+        <h2>Why You'll Love It</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🧠 Train Your Brain</h3>
+                <p>Sharpen your mind and improve spatial logic with hundreds of engaging color-link puzzles.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌿 Relax & Unwind</h3>
+                <p>No timers, no rush, and no score penalties. Play at your own pace whenever you need a break.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📶 Works Offline</h3>
+                <p>No internet or Wi-Fi required. Play anytime, anywhere, whether on the go or offline.</p>
+            </div>
+            <div class="feature-card">
+                <h3>✨ Simple Controls</h3>
+                <p>Clean visual layout with smooth touch controls designed for players of all ages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="app-ads.txt">app-ads.txt</a> | 
+            <a href="mailto:support@yourdomain.com">Contact Support</a>
+        </div>
+        <p>&copy; Dot Connect: Color Puzzle. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
